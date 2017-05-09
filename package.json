@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-apollo",
+  "version": "1.0.0",
+  "description": "Nuxt.js with Apollo",
+  "author": "Charlie Hield",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "keywords": [
+    "nuxt",
+    "vue",
+    "apollo",
+    "graphql"
+  ],
+  "dependencies": {
+    "@moltin/sdk": "^2.2.0",
+    "apollo-client": "^1.0.2",
+    "axios": "^0.16.1",
+    "fs": "0.0.1-security",
+    "graphql-tag": "^2.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "moltin": "^2.2.0",
+    "nuxt": "^0.10.5",
+    "zooming": "^1.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "vue-style-loader": "^3.0.1"
+  }
+}
