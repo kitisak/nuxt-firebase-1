@@ -35,3 +35,32 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+.nuxt/components/nuxt-child.js
+.nuxt/
+.nuxt/App.vue
+.nuxt/client.js
+.nuxt/components/nuxt-error.vue
+.nuxt/components/nuxt-link.js
+.nuxt/components/nuxt-loading.vue
+.nuxt/components/nuxt.vue
+.nuxt/dist/0.nuxt.bundle.9a01cc39d22b8e5eac70.js
+.nuxt/dist/1.nuxt.bundle.930996d4a00b85ef84c5.js
+.nuxt/dist/2.nuxt.bundle.fbce1b09a21e252f2d48.js
+.nuxt/dist/3.nuxt.bundle.a90304c0a7f547b9cc57.js
+.nuxt/dist/4.nuxt.bundle.6fdd2cf2c7bee4302fa3.js
+.nuxt/dist/5.nuxt.bundle.69bcc841951249ab85d1.js
+.nuxt/dist/img/benefits.5e833b9.jpg
+.nuxt/dist/img/bio.184cf4e.png
+.nuxt/dist/img/flow_one.a96d90d.jpg
+.nuxt/dist/img/flow_two.6762a3c.jpg
+.nuxt/dist/img/lotus.333fecd.svg
+.nuxt/dist/index.html
+.nuxt/dist/manifest.1639c514cad15c742420.js
+.nuxt/dist/nuxt.bundle.72e86ededa331fe5b90d.js
+.nuxt/dist/server-bundle.json
+.nuxt/dist/vendor.bundle.1639c514cad15c742420.js
+.nuxt/index.js
+.nuxt/middleware.js
+.nuxt/router.js
+.nuxt/server.js
+.nuxt/utils.js

@@ -22,19 +22,19 @@ module.exports = {
   /*
   ** Global CSS settings
   */
-	css: ['assets/main.css'],
+	css: ['assets/main.css', 'assets/tachyons.css'],
 
   /*
   ** Build configuration
   */
   build: {
-		vendor: ['axios'],
+		vendor: ['axios', 'vue-parallax-js', 'vue-in-viewport-directive' ],
     /*
     ** Run ESLINT on save
     */
-    extend (config, ctx) {
+    // extend (config, ctx) {
       // if (ctx.isServer) {
-				config.node = { fs: 'empty' }
+				// config.node = { fs: 'empty' }
         // config.module.rules.push({
           // enforce: 'pre',
           // test: /\.(js|vue)$/,
@@ -51,7 +51,7 @@ module.exports = {
 				// 	tls: 'empty'
 				// }
       // }
-    }
-  }
+  },
+	plugins: [ { src: '~plugins/vue-parallax', ssr: false }, { src: '~plugins/viewport-directive', ssr: false } ]
 
 }
