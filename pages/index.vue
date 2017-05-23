@@ -1,7 +1,7 @@
 <template>
 		<section class="home">
 			<div class="home__content">
-				<div class="content is-small">
+				<div class="content">
 					<ul>
 						<li v-for="work in works">
 							<nuxt-link :to="`/work/${work.slug}`">{{work.title}}</nuxt-link>
@@ -13,72 +13,38 @@
 </template>
 
 <script>
-import axios from 'axios'
-import Moltin from '~plugins/moltin.js'
-import URLSearchParams from 'url-search-params';
+import axios from 'axios';
+// import Moltin from '~plugins/moltin.js'
 
-
+// someitmes we need to run scripts only on the client side.
 if (process.BROWSER_BUILD) {
 	// require('~plugins/moltin.js');
 }
 
-var params = new URLSearchParams();
-params.append('client_id', 'dSZxfQFcGKaS3LIOsg7cZKk4B0q5yJoQKV9iYlWsZz');
-params.append('client_secret', 'KqQjA3JhpF60qBDtYuLnpDWDCyLXW6xA2dPULhufCx');
-params.append('grant_type', 'client_credentials');
-
-
 export default {
-	props: {
-		wors: ''
-	},
-	head () {
+	layout: 'default',
+	head() {
 		return {
 			title: 'Home',
-			meta: [
-				{ hid: 'description', name: 'description', content: 'Index Page' }
-			]
-		}
+			meta: [{ hid: 'description', name: 'description', content: 'Index Page' }]
+		};
 	},
-  async asyncData() {
-
-		// let { auth } = await axios({
-		// 							  method: 'post',
-		// 							  url: 'https://api.moltin.com/oauth/access_token',
-		// 								headers: {
-		// 										'content-type': 'application/x-www-form-urlencoded'
-		// 								},
-		// 							  data: { params }
-		// 							})
-		//axios.post('https://api.moltin.com/oauth/access_token') //Moltin.Products.All()
-    let { data } = await axios.get('https://backend-65b11.firebaseio.com/work.json')
-    return {
-      works: data
-			// tokens: auth
-    }
-  },
+	async asyncData() {
+		let { data } = await axios.get(
+			'https://backend-65b11.firebaseio.com/work.json'
+		);
+		console.log('SSR: ', data);
+		return {
+			works: data
+		};
+	},
+	created() {
+		console.log('Created: ', this.works);
+	},
 	mounted() {
-		Moltin.Authenticate().then((response) => {
-		  console.log('authenticated', response);
-		});
-
-		// const products = Moltin.Products.All().then((products) => {
-		//   console.log(products);
-		// });
-
-
-
-
-
-
-	// 	curl -X "POST" "https://api.moltin.com/oauth/access_token" \
-  // -d "client_id=XXXX" \
-  // -d "client_secret=XXXX" \
-  // -d "grant_type=client_credentials"
-
+		console.log('Mounted: ', this.works);
 	}
-
-}
+};
 </script>
 
 <style lang="scss">

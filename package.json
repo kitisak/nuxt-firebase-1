@@ -1,13 +1,14 @@
 {
-  "name": "nuxt-apollo",
+  "name": "nuxt-mmm",
   "version": "1.0.0",
-  "description": "Nuxt.js with Apollo",
-  "author": "Charlie Hield",
+  "description": "Nuxt.js Example",
+  "author": "mmm",
   "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+		"generate": "nuxt generate"
   },
   "keywords": [
     "nuxt",
