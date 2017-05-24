@@ -250,9 +250,9 @@ $tarDark: #43424a;
 			}
 		}
 
-		.plans-grid__item { flex: 1; height: 100%; padding-bottom: 4%; display: inline-block; margin: auto 2%;
+		.plans-grid__item { flex: 1; padding-bottom: 4%; display: inline-block; margin: auto 2%;
 
-			.plans-grid__inner { height: 100%; border: 2px solid $tarDark; padding: 25px; border-radius: 10px; max-width: 300px; margin: 0 auto;
+			.plans-grid__inner { border: 2px solid $tarDark; padding: 25px; border-radius: 10px; max-width: 300px; margin: 0 auto;
 
 
 				.plans--grid__content { text-align: center; color: white;

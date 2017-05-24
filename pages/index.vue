@@ -114,7 +114,6 @@ import axios from 'axios'
 import Plans from '../components/sections/Plans.vue'
 import Mission from '../components/sections/Mission.vue'
 
-
 if (process.BROWSER_BUILD) {
 
 	// require('~plugins/vue-waypoint')
@@ -214,7 +213,7 @@ $bezier: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 $time: 300ms;
 
 .benefits__section--bg {
-	background-image: url('./../assets/media/benefits.jpg');
+	background-image: url('./../assets/media/class.jpg');
 	background-position: center;
 	background-size: cover;
 	content: ' ';
@@ -771,7 +770,7 @@ padding: 4%;
 	justify-content: center;
 	position: relative;
 	.benefits__section--bg {
-		background-image: url('../assets/media/benefits.jpg');
+		background-image: url('../assets/media/class.jpg');
 		background-position: center;
 		background-size: cover;
     content: ' ';
