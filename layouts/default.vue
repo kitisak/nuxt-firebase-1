@@ -1,28 +1,25 @@
 <template>
 
 		<div class="default__template">
-			<navigation></navigation>
+			<!-- <navigation></navigation> -->
 
 	    <nuxt />
-		<contact-footer></contact-footer>
+		<!-- <contact-footer></contact-footer> -->
 	</div>
 
 </template>
 
 <script>
-
-import Navigation from '~components/Navigation.vue'
-import ContactFooter from '~components/ContactFooter.vue'
-
+import Navigation from '~components/Navigation.vue';
+import ContactFooter from '~components/ContactFooter.vue';
 
 export default {
-	transition: 'page',
-	components: {
-		Navigation,
-		ContactFooter
-	}
-}
-
+  transition: 'page',
+  components: {
+    Navigation,
+    ContactFooter
+  }
+};
 </script>
 
 
