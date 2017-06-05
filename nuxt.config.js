@@ -21,11 +21,12 @@ module.exports = {
 	/*
   ** Global CSS settings
   */
-	css: ['assets/main.css'],
+	css: ['assets/main.css', 'assets/tachyons.css'],
 
 	/*
   ** Build configuration
   */
+<<<<<<< HEAD
 	build: {
 		vendor: ['axios'],
 		/*
@@ -86,3 +87,33 @@ module.exports = {
 		useShortDoctype: true
 	}
 };
+=======
+  build: {
+		vendor: ['axios', 'vue-parallax-js', 'vue-in-viewport-directive' ],
+    /*
+    ** Run ESLINT on save
+    */
+    // extend (config, ctx) {
+      // if (ctx.isServer) {
+				// config.node = { fs: 'empty' }
+        // config.module.rules.push({
+          // enforce: 'pre',
+          // test: /\.(js|vue)$/,
+          // loader: 'eslint-loader',
+          // exclude: /(node_modules)/
+					// node: {
+					//   fs: 'empty'
+					// }
+        // })
+				// config.node = {
+				// 	console: 'empty',
+				// 	fs: 'empty',
+				// 	net: 'empty',
+				// 	tls: 'empty'
+				// }
+      // }
+  },
+	plugins: [ { src: '~plugins/vue-parallax', ssr: false }, { src: '~plugins/viewport-directive', ssr: false } ]
+
+}
+>>>>>>> 9b786ea09bc2fa2844c5a9fe7c67f686a5239643
