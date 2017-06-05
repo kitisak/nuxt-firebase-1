@@ -1,18 +1,30 @@
 <template>
+<div id="single">
   <div class="work__single">
-		<div class="content">
-				<div class="work__content">
-					<h1 v-if="work.title">{{ work.title }}</h1>
-					<h2>{{ work.details }}</h2>
-					<p>{{ work.description }}</p>
-				</div>
-				<div class="work__media">
-					<div class="" v-for="image in work.gallery">
-						<img class="bg__image" :src="image">
+<div class="single__wrapper">
+
+<div class="section--half">
+
+<div class="section--content">
+					<div class="work__content">
+						<h1 v-if="work.title">{{ work.title }}</h1>
+						<h2>{{ work.details }}</h2>
+						<p>{{ work.description }}</p>
 					</div>
-				</div>
-		</div>
-  </div>
+					<div class="work__media">
+						<div class="" v-for="image in work.gallery">
+							<img class="bg__image" :src="image">
+						</div>
+					</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
 </template>
 
 <script>
@@ -80,7 +92,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+
+#single {
+
+}
+
 
 img {
   width: 100%;
@@ -88,9 +105,11 @@ img {
 }
 
 .work__single {
-	max-width: 800px;
-	margin: 0 auto;
 
+}
+
+.work__media {
+	margin-top: 45px;
 }
 
 .bg__image {

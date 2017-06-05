@@ -1,8 +1,7 @@
 <template>
 
 		<div class="default__template">
-			<!-- <navigation></navigation> -->
-
+			<navigation></navigation>
 	    <nuxt />
 		<!-- <contact-footer></contact-footer> -->
 	</div>
@@ -10,28 +9,25 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-export default {
-	transition: 'page'
-=======
-import Navigation from '~components/Navigation.vue';
-import ContactFooter from '~components/ContactFooter.vue';
+import Navigation from '../components/Navigation';
 
 export default {
-  transition: 'page',
-  components: {
-    Navigation,
-    ContactFooter
-  }
->>>>>>> 9b786ea09bc2fa2844c5a9fe7c67f686a5239643
+	transition: 'page',
+	components: {
+		Navigation
+	}
 };
 </script>
 
 
-<style>
+<style lang="scss">
+body {
+	-webkit-font-smoothing: antialiased;
+}
 .default__template {
 	height: 100%;
 	width: 100%;
 	position: relative;
+	margin-top: 60px;
 }
 </style>

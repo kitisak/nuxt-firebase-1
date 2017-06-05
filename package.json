@@ -1,21 +1,14 @@
 {
-<<<<<<< HEAD
-  "name": "nuxt-mmm",
-  "version": "1.0.0",
-  "description": "Nuxt.js Example",
-  "author": "mmm",
-=======
   "name": "flowy-life",
   "version": "1.0.0",
   "description": "Nuxt.js with Firebase",
   "author": "Mateo Marquez",
->>>>>>> 9b786ea09bc2fa2844c5a9fe7c67f686a5239643
   "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-		"generate": "nuxt generate"
+    "generate": "nuxt generate"
   },
   "keywords": [
     "nuxt",
@@ -28,6 +21,7 @@
     "vue-in-viewport-directive": "^1.1.4",
     "vue-parallax-js": "0.0.4",
     "vue-scroll": "^2.0.2",
+    "vue2-touch-events": "^0.2.0",
     "zooming": "^1.1.4"
   },
   "devDependencies": {
